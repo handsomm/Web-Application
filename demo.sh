@@ -18,7 +18,7 @@
 txt="nothing to commit, working tree clean"
 
 var=$(git status | awk "NR==5 {print $1}")
-
+echo $var
 if [ "$var" = "$txt" ];
 then
 	echo "Nothing to commit"
