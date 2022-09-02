@@ -11,10 +11,6 @@
 #	git remote add origin $url
 #fi
 
-git add .
-echo "Enter commit message"
-read msg
-git commit -m "$msg"
 txt="nothing to commit, working tree clean"
 
 var=$(git status | awk "NR==2 {print $1}")
@@ -23,5 +19,8 @@ if [ "$var" = "$txt" ];
 then
 	echo "Nothing to commit"
 else
-	echo "Hyyy"
+	git add .
+	echo "Enter commit message"
+	read msg
+	git commit -m "$msg"
 fi
