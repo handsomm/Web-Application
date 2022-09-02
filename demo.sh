@@ -1,14 +1,14 @@
 #!/bin/bash
 
-if [ -d .git ];
-then
-	echo "Git already initialized"
-else
-	git init
-	echo "Enter the URL"
-	read url
-	git remote add origin $url
-fi
+#if [ -d .git ];
+#then
+#	echo "Git already initialized"
+#else
+#	git init
+#	echo "Enter the URL"
+#	read url
+#	git remote add origin $url
+#fi
 
 git add .
 echo "Enter commit message"
