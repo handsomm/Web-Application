@@ -24,3 +24,4 @@ else
 	read msg
 	git commit -m "$msg"
 fi
+git push origin master
