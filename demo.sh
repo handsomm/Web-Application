@@ -10,7 +10,7 @@
 #	git remote add origin $url
 #fi
 
-git add .
+#git add .
 #echo "Enter commit message"
 #read msg
 #git commit -m "$msg"
