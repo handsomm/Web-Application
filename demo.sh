@@ -14,13 +14,13 @@ git add .
 echo "Enter commit message"
 read msg
 git commit -m "$msg"
-#txt="nothing to commit, working tree clean"
+txt="nothing to commit, working tree clean"
 
-#var=$(git status | awk "NR==5 {print $1}")
+var=$(git status | awk "NR==5 {print $1}")
 
-#if [ "$var" = "$txt" ];
-#then
-#	echo "Hello"
-#else
-#	echo "Hyyy"
-#fi
+if [ "$var" = "$txt" ];
+then
+	echo "Nothing to commit"
+else
+	echo "Hyyy"
+fi
