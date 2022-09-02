@@ -11,9 +11,9 @@
 #fi
 
 git add .
-echo "Enter commit message"
-read msg
-git commit -m "$msg"
+#echo "Enter commit message"
+#read msg
+#git commit -m "$msg"
 txt="nothing to commit, working tree clean"
 
 var=$(git status | awk "NR==5 {print $1}")
